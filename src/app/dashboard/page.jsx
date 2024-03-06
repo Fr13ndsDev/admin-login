@@ -6,6 +6,7 @@ import React, { useEffect } from "react";
 const Page = () => {
   const { data: session, status } = useSession();
   const router = useRouter();
+  console.log(session);
 
   useEffect(() => {
     if (!session?.user) {
